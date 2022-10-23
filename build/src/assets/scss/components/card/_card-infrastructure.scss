@@ -1,0 +1,118 @@
+.card-infrastructure {
+  margin-bottom: 450px;
+  position: relative;
+
+  &__title {
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #3B3734;
+    position: relative;
+    display: table;
+    min-height: 225px;
+    margin-bottom: 57px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #3B3734;
+    max-width: 542px;
+
+    &:not(:last-child) {
+      margin-bottom: 44px;
+    }
+
+    &:last-child {
+      max-width: 433px;
+      margin-bottom: 400px;
+    }
+
+    &--2 {
+      &:not(:last-child) {
+        margin-bottom: 60px;
+      }
+      width: 531px;
+    }
+  }
+
+  &__sg {
+    font-weight: 400;
+    font-size: 160px;
+    line-height: 140%;
+    color: #D0A966;
+    position: absolute;
+    top: -16px;
+    right: 0;
+    z-index: 0;
+  }
+
+  &__first {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: minmax(300px, 823px) 1fr;
+    gap: 274px;
+  }
+
+  &__section {
+    padding-right: var(--cp);
+  }
+
+  &__wrapper-2 {
+    display: grid;
+    justify-content: space-between;
+    position: relative;
+    grid-template-columns: 1fr minmax(300px, 661px);
+    top: -198px;
+    z-index: 2;
+    gap: 100px;
+    background: #E8E4DD;
+  }
+
+  &__background {
+    background: #E8E4DD;
+    padding-bottom: 350px;
+  }
+
+  &__section-2 {
+    margin-top: 371px;
+    padding-left: calc(var(--cp) + 190px);
+    padding-bottom: 87px;
+  }
+
+  &__image {
+    max-width: 823px;
+    height: 1080px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 3;
+  }
+
+  &__image-2 {
+    max-width: 661px;
+    height: 661px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 3;
+    top: -170px;
+  }
+
+  &__image-3 {
+    max-width: 1503px;
+    width: 100%;
+    height: 850px;
+    object-fit: cover;
+    position: absolute;
+    bottom: -340px;
+    right: 0;
+    z-index: 3;
+  }
+}

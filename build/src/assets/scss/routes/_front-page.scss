@@ -1,0 +1,45 @@
+.front-page {
+  &__banner {
+
+  }
+
+  &__about {
+    margin-top: -100px;
+    margin-bottom: 284px;
+  }
+
+  &__agents {
+    margin-bottom: 200px;
+  }
+
+  &__residence {
+    margin-bottom: 335px;
+  }
+
+  &__we-are {
+    margin-bottom: 300px;
+  }
+
+  &__projects {
+    margin-bottom: 200px;
+  }
+
+  &__services {
+    margin-bottom: 150px;
+  }
+
+  &__property {
+    margin-bottom: 116px;
+  }
+
+  &__blog {
+    margin-bottom: 117px;
+  }
+
+  &__background {
+    background-image: url("/public/images/front-bg.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}

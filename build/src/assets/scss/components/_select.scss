@@ -1,0 +1,82 @@
+.custom-select-opener {
+  height: 60px;
+  background: transparent;
+  color: #000000;
+  font-family: $font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  position: relative;
+
+  &:before {
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e900";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 5px;
+    transition: .3s;
+  }
+}
+
+.custom-select-container {
+  border: 1px solid rgba(#3B3734, .3);
+  border-radius: 6px;
+
+  &.is-open {
+    border: 1px solid rgba(59, 55, 52, 0.3);
+    background: #F5F2ED;
+    border-radius: 6px;
+
+    .custom-select-panel {
+      border-radius: 0 0 6px 6px;
+    }
+
+    .simplebar-mask {
+      border-radius: 0 0 6px 6px;
+    }
+
+    .custom-select-opener {
+      &:before {
+        transform: translateY(-50%) scaleY(-1);
+      }
+    }
+  }
+}
+
+
+.custom-select-option {
+  color: rgba(#000, .5);
+  background: #F5F2ED;
+
+  &.is-selected {
+    background-color: #8F8175;
+    color: #fff;
+
+    &:before {
+      content: none;
+    }
+  }
+
+  &.has-focus {
+    background-color: #8F8175;
+    color: #fff;
+  }
+}
+
+.custom-select-panel,
+.custom-select-container.is-open .custom-select-panel {
+  overflow: unset !important;
+}

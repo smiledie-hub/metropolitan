@@ -1,0 +1,110 @@
+.card-schema {
+  background: #fff;
+  padding: 180px 0 123px 0;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 30px;
+  }
+
+  &__section {
+
+  }
+
+  &__price {
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+  }
+
+  &__category {
+    margin-bottom: 10px;
+  }
+
+  &__map {
+
+  }
+
+  &__items {
+    margin-top: 46px;
+    margin-bottom: 38px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    & > span {
+      display: table;
+      width: 80px;
+
+      .icon-baths {
+        font-size: 24px;
+      }
+
+      .icon-cars {
+        font-size: 14px;
+      }
+
+      .icon-beds {
+        font-size: 12px;
+      }
+
+      .icon-sort-fill {
+        font-size: 24px;
+      }
+    }
+
+    &:last-child {
+      margin-top: 135px;
+      font-weight: 600;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__icon {
+    width: 45px;
+    height: 45px;
+    background: #8F8175;
+    border: 1px solid #8F8175;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+    .icon-leaf, .icon-pool {
+      font-size: 22px;
+    }
+  }
+
+  &__navs {
+    margin-top: 158px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.btn-nav {
+  font-size: 9px;
+
+  &--prev {
+
+  }
+
+  &--next {
+
+  }
+}

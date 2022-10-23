@@ -1,0 +1,161 @@
+.header {
+  height: 64px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  color: #fff;
+
+  &__wrapper {
+    width: 100%;
+  }
+
+  &__logotype {
+    .icon-logo {
+      font-size: 63px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  &__menu {
+    margin-right: 32px;
+  }
+
+  &__lang {
+    margin-right: 19px;
+  }
+
+  &__currency {
+    margin-right: 15px;
+  }
+
+  &__login {
+    margin-right: 18px;
+  }
+
+  &__enquiry {
+    margin-right: 15px;
+    &:hover {
+      background: #ffffff;
+      color: #D0A966;
+    }
+  }
+
+  &__like {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+
+    .icon-like {
+      position: relative;
+      top: 2px;
+    }
+
+    &:hover {
+      background: #D0A966;
+      color: #3B3734;
+    }
+  }
+}
+
+.header-static {
+  .header {
+    height: 144px;
+    top: 0;
+    border-bottom: 1px solid rgba(#3B3734, .1);
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &__logotype {
+      color: #332E2A;
+    }
+
+    &__menu {
+      color: #fff;
+
+      &:hover {
+        border-color: #332E2A;
+        color: #332E2A;
+      }
+    }
+
+    &__lang {
+      .btn-select__btn--selected {
+        color: #332E2A;
+        border-color: #332E2A;
+      }
+
+      &:hover {
+        .btn-select__btn--selected {
+          border-color: #fff;
+        }
+      }
+    }
+
+    &__currency {
+      .btn-select__btn--selected {
+        color: #332E2A;
+        border-color: #332E2A;
+      }
+
+      &:hover {
+        .btn-select__btn--selected {
+          border-color: #fff;
+        }
+      }
+    }
+
+    &__pdf {
+      color: #332E2A;
+
+      span {
+        color: #fff;
+      }
+    }
+
+    &__login {
+      color: #332E2A;
+    }
+
+    &__enquiry {
+      color: #332E2A;
+      border-color: #332E2A;
+    }
+
+    &__like {
+      color: #332E2A;
+
+      &:hover {
+        background: #D0A966;
+        color: #3B3734;
+      }
+    }
+
+    &__whatsapp {
+      .icon-whatsapp {
+        color: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.btn-select {
+  $root: &;
+
+  position: relative;
+  width: 70px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+
+  &__list {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 200ms;
+    padding-top: 15px;
+  }
+
+  &:hover {
+    #{$root}__list {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    #{$root}__btn--selected {
+      background: #fff;
+      color: #D0A966;
+    }
+  }
+
+  &__btn {
+    border: 1px solid #FFFFFF;
+    border-radius: 142px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    color: #FFFFFF;
+    width: 70px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 200ms;
+
+    &:not(&--selected) {
+      background: #fff;
+      color: #3B3734;
+    }
+
+    &:hover:not(&--selected) {
+      background: #D0A966;
+      color: #fff;
+      border-color: transparent;
+    }
+  }
+
+  &--round {
+    width: 53px;
+
+    #{$root}__btn {
+      width: 45px;
+
+      &:hover {
+        width: 53px;
+        height: 53px;
+      }
+
+      &--selected {
+        &:hover {
+          width: 45px;
+          height: 45px;
+        }
+      }
+    }
+  }
+}

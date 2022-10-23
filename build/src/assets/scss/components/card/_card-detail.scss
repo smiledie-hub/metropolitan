@@ -1,0 +1,138 @@
+.card-detail {
+  padding: 50px 0 60px 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &__section {
+    &:last-child {
+      max-width: 447px;
+      width: 100%;
+    }
+  }
+
+  &__price {
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    color: #3B3734;
+    margin-bottom: 24px;
+  }
+
+  &__category {
+    margin-bottom: 16px;
+  }
+
+  &__map {
+    margin-bottom: 30px;
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__plan {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.card-detail-profile {
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+  margin-top: 64px;
+
+  &__image {
+    width: 172px;
+    height: 172px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #3B3734;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #3B3734;
+    opacity: 0.7;
+    margin-bottom: 24px;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__social {
+    border: 0.7px solid #8F8175;
+    color: #8F8175;
+
+    .icon-whatsapp-thin {
+      font-size: 17px;
+    }
+
+    .icon-phone, .icon-mail {
+      font-size: 11px;
+    }
+
+    &:hover {
+      background: #8F8175;
+      border-color: #8F8175;
+      color: #E8E4DD;
+    }
+  }
+}
+
+.card-detail-price {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #3B3734;
+}
+
+.card-detail-map {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #D0A966;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-detail-category {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #3B3734;
+}

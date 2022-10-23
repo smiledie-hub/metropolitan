@@ -1,0 +1,54 @@
+.front-about {
+  &__content {
+    position: relative;
+    max-width: 966px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #3B3734;
+    margin-bottom: 75px;
+  }
+
+  &__sg {
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 140.62%;
+    color: #D0A966;
+    position: relative;
+    left: -40px;
+  }
+
+  &__title-end {
+    position: relative;
+    top: -29px;
+    margin-left: 121px;
+  }
+
+  &__text {
+    max-width: 629px;
+    margin-left: 121px;
+    margin-bottom: 55px;
+  }
+
+  &__text-2 {
+    max-width: 641px;
+    margin-left: 325px;
+  }
+
+  &__buttons {
+    margin-top: 55px;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__button {
+    padding: 0 25px;
+    height: 54px;
+  }
+}

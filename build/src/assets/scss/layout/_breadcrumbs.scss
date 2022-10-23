@@ -1,0 +1,27 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #3B3734;
+  padding: 30px 0;
+  user-select: none;
+
+  & > * {
+    opacity: 0.5;
+    transition: 200ms;
+  }
+
+  a {
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .icon-arrow-next {
+    position: relative;
+    top: .15em;
+    font-size: 7px;
+  }
+}

@@ -1,0 +1,21 @@
+.front-agents {
+  &__find {
+    width: 225px;
+    height: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F2F0EF;
+    border: 1px solid #D0A966;
+    border-radius: 50%;
+
+    &:hover {
+      background: #D0A966;
+      color: #fff;
+    }
+  }
+
+  &__slider {
+    margin-bottom: 200px;
+  }
+}

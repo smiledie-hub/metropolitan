@@ -1,0 +1,78 @@
+.card-lifestyle {
+  padding-bottom: 140px;
+
+  &__title {
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #3B3734;
+    position: relative;
+    display: table;
+    height: 300px;
+    margin-bottom: 43px;
+  }
+
+  &__first {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #3B3734;
+
+    &:not(:last-child) {
+      margin-bottom: 46px;
+    }
+  }
+
+  &__sg {
+    font-weight: 400;
+    font-size: 210px;
+    line-height: 140%;
+    color: #D0A966;
+    position: absolute;
+    z-index: 0;
+    top: -45px;
+    left: 109px;
+  }
+
+  &__content {
+    margin: 0 auto;
+    display: table;
+    max-width: 730px;
+    width: 100%;
+    padding-left: 100px;
+
+    &--2 {
+      max-width: 682px;
+    }
+  }
+
+  &__image-1 {
+    max-width: 1503px;
+    width: 100%;
+    margin-top: 108px;
+    margin-bottom: 100px;
+  }
+
+  &__image-2 {
+    max-width: 671px;
+    width: 100%;
+  }
+
+  &__image-3 {
+    max-width: 966px;
+    width: 100%;
+  }
+
+  &__images {
+    margin-top: 83px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+  }
+}

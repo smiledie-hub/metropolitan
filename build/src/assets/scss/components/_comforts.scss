@@ -1,0 +1,21 @@
+.comforts {
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+  margin-bottom: 55px;
+
+  &__item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #3B3734;
+
+    .icon-baths {
+      font-size: 20px;
+    }
+  }
+
+  &__icon {
+    margin-right: 11px;
+  }
+}

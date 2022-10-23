@@ -1,0 +1,33 @@
+.search-field {
+  height: 100%;
+  border: 1px solid rgba(#3B3734, .3);
+  border-radius: 6px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+
+  &__icon {
+    color: #000;
+    font-size: 15px;
+    margin-left: 20px;
+  }
+
+  &__input {
+    height: 100%;
+    padding: 0 20px;
+    background: transparent;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+
+    &::placeholder {
+      color: #000000;
+    }
+  }
+}
+
+

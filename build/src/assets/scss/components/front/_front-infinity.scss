@@ -1,0 +1,24 @@
+.front-infinity {
+  &__marquee {
+    font-weight: 400;
+    font-size: 88.0426px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #3B3734;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-bottom: 105px;
+  }
+
+  &__sg {
+    font-weight: 400;
+    font-size: 169.313px;
+    line-height: 150%;
+    color: #D0A966;
+    margin: 0 .2em;
+  }
+
+  &__text {
+    animation: marquee 5s linear infinite;
+  }
+}

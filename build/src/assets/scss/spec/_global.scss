@@ -1,0 +1,36 @@
+html, body {
+  scroll-behavior: smooth;
+  font-family: $font;
+  overflow-x: hidden;
+  background: #F2F0EF;
+}
+
+.fn-sg {
+  font-family: $font-sg;
+  text-transform: initial;
+}
+
+.no-select {
+  user-select: none;
+  pointer-events: none;
+}
+
+.bg-second {
+  background-color: #E8E4DD;
+}
+
+.bg-primary {
+  background-color: #D0A966;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-black {
+  background-color: #332E2A;
+}
+
+.bg-gray {
+  background-color: #F2F0EF;
+}

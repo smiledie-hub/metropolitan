@@ -1,0 +1,22 @@
+.minimal-footer {
+  background: #3B3734;
+  padding: 43px var(--cp) 53px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 52px;
+  }
+
+  &__section {
+    display: flex;
+    align-items: center;
+    gap: 52px;
+  }
+
+  &__logotype {
+    color: #D0A966;
+    font-size: 55px;
+  }
+}

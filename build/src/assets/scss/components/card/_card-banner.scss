@@ -1,0 +1,145 @@
+.card-banner {
+  position: relative;
+  cursor: none;
+
+  &__prev, &__next {
+    width: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 100%;
+  }
+
+  &__next {
+    left: auto;
+    right: 0;
+  }
+
+  &__swiper {
+
+  }
+
+  &__wrapper {
+
+  }
+
+  &__slide {
+    width: 100%;
+    height: 850px;
+    user-select: none;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  &__play {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: 200ms;
+    height: 54px;
+
+    &:hover {
+      background: #fff;
+
+      .play {
+        border-color: #3B3734;
+      }
+    }
+  }
+
+  &__buttons {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    bottom: 45px;
+    right: calc(var(--cp) + 168px);
+    z-index: 10;
+  }
+
+  &__cube {
+    height: 54px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: 200ms;
+
+    &:hover {
+      background: #fff;
+    }
+
+    .icon-cube {
+      font-size: 23px;
+    }
+  }
+}
+
+.card-page {
+  &__background {
+    background: #E8E4DD;
+  }
+  &__cursor {
+    border: 2px solid #D0A966;
+    border-radius: 50%;
+    transform: translateY(-50%) translateX(-50%); /* центрируем кружок */
+    position: absolute; /* задаём абсолютное позиционирование, чтобы элемент не влиял на остальные элементы и его можно было бы позиционировать следом за курсором */
+    z-index: 999; /* чтобы элемент был над остальными элементами */
+    pointer-events: none; /* чтобы сквозь элемент можно было взаимодействовать с элементами, находящимися под ним */
+    transition: width 0.2s, height 0.2s, border-radius 0.2s, background 0.2s;
+    top: 50vh;
+    left: 50%;
+    width: 225px;
+    height: 225px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    font-size: 17px;
+
+    &--link {
+      display: none;
+    }
+
+    &--prev {
+      .icon-arrow-next {
+        display: none;
+      }
+    }
+
+    &--next {
+      .icon-arrow-prev {
+        display: none;
+      }
+    }
+
+    &--click {
+      width: 165px;
+      height: 165px;
+    }
+  }
+}
+
+.play {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  transition: 200ms;
+
+  .icon-play {
+    font-size: 6px;
+  }
+}

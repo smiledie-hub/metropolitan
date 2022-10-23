@@ -1,0 +1,88 @@
+.card-description {
+  padding-top: 100px;
+
+  &__subtitle{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #3B3734;
+    opacity: 0.5;
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #3B3734;
+    margin-bottom: 141px;
+    max-width: 820px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 50vw 1fr;
+    gap: 140px;
+
+    &--end {
+      padding-right: var(--cp);
+    }
+  }
+
+  &__items {
+    width: 50vw;
+    padding-left: var(--cp);
+    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 174px;
+  }
+
+  &__image {
+    width: 50vw;
+    object-fit: cover;
+  }
+
+  &__text {
+    max-width: 399px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #3B3734;
+    margin-top: 27px;
+  }
+
+  &__number {
+    font-weight: 400;
+    font-size: 108px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #8F8175;
+  }
+
+  &__label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #8F8175;
+    max-width: 187px;
+  }
+
+  &__content {
+    max-width: 613px;
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #3B3734;
+
+      &:not(:last-child) {
+        margin-bottom: 52px;
+      }
+    }
+  }
+}
